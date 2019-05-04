@@ -9,11 +9,11 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'You dont respond to mosquito bite with a hummer', 'Choose the right tool for the job', new Date(2019, 5, 4)),
+    new Quote(1, 'You dont respond to mosquito bite with a hummer', 'Choose the right tool for the job', new Date(2019, 4, 4)),
     // tslint:disable-next-line: max-line-length
-    new Quote(2, 'Better late than never', 'Bora ufike', new Date(2019, 5, 4)),
+    new Quote(2, 'Better late than never', 'Bora ufike', new Date(2019, 2, 16)),
 
-    new Quote(3, 'Better late than never', 'Bora ufike', new Date(2019, 5, 4))
+    new Quote(3, 'Better late than never', 'Bora ufike', new Date(2019, 3, 6))
   ]
 
   toggleDetails(index){
