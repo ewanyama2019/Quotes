@@ -1,6 +1,6 @@
 <ul>
     <div *ngFor='let quote of quotes;let i = index'>
-      <li appHighlight>{{quote.name}}
+      <li id="{{i}}" appHighlight>{{quote.name}} --[Posted on {{quote.postedDate|date}}]
       <button (click)='toggleDetails(i)'>Toggle Details</button>
       <button>up-vote</button>
       <button>down-vote</button>
