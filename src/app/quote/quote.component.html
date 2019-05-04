@@ -1,0 +1,14 @@
+<ul>
+    <div *ngFor='let quote of quotes;let i = index'>
+      <li>{{quote.name}}
+      <button (click)='toggleDetails(i)'>Toggle Details</button>
+      <button>up-vote</button>
+      <button>down-vote</button>
+      
+      </li>
+  <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+  <hr>
+  </div>
+</ul>
+
+
