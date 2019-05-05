@@ -1,5 +1,11 @@
-<ul>
+<div class="container">
+  <div class="row">
+    <app-quote-form></app-quote-form>
+  </div>
+</div>
 
+<ul>
+  <h3>Quotes posted</h3>
   <div *ngFor='let quote of quotes;let i = index'>
       <li id="{{i}}" appHighlight>{{quote.name}} --[Posted on {{quote.postedDate|date}}]
       <button class="btn btn-primary"(click)='toggleDetails(i)'>Toggle Details</button>
