@@ -32,9 +32,15 @@
       <div class="form-group">
 
         <label for="postedDate">Posted on</label>
-        <input type='date' id="postedDate" required>
+        <input type='date' id="postedDate" [(ngModel)]="newQuote.postedDate" name="postedDate" #postedDate="ngModel"  required>
+        <div [hidden]="postedDate.valid || postedDate.prestine" class="alert alert-danger">
+          <p>Date is required</p>
 
+        </div>
+          <!--Testing to see if we get data-->
+           {{newQuote.postedDate}}
       </div>
+
       <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
 
