@@ -16,6 +16,13 @@ export class QuoteComponent implements OnInit {
     new Quote(3, 'Better late than never', 'Bora ufike', new Date(2019, 3, 6))
   ]
 
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id=quoteLength+1;
+    quote.postedDate = new Date(quote.postedDate)
+    this.quotes.push(quote)
+  }
+
   toggleDetails(index){
     this.quotes[index].showDetails =!this.quotes[index].showDetails;
   }
