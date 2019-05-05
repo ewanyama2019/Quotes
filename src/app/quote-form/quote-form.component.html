@@ -7,7 +7,7 @@
         <label for="name">Quote</label>
         <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
         <div [hidden]="name.valid || name.prestine" class="alert alert-danger">
-          <p>Quote is requires</p>
+          <p>Quote is required</p>
 
         </div>
         <!--Testing to see if we get data-->
@@ -19,13 +19,16 @@
       <div class="form-group">
 
         <label for ="details">Details</label>
-        <textarea class="form-control" id="details" rows="5" [(ngModel)]="newGoal.details" name="details" #desctiption="ngModel" required></textarea>
+        <textarea class="form-control" id="details" rows="5" [(ngModel)]="newQuote.details" name="details" #details="ngModel" required></textarea>
         <div [hidden]="details.valid || details.prestine" class="alert alert-danger">
           <p>Quite details are required</p>
 
         </div>
+        <!--Testing to see if we get data-->
+        Display {{newQuote.details}}
       </div>
 
+      <!-- Date Input -->
       <div class="form-group">
 
         <label for="postedDate">Posted on</label>
