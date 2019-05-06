@@ -1,5 +1,10 @@
 # Quotes
 
+###By _Eric Wafula Wanyama
+
+##Description
+the application allows a user to input a quote and its details and the timeof submission.it then displays the quotes and gives user the option to delete, toggle detail and upvote or downvote the quote. then highlighting the quote with the highest votes 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
@@ -25,3 +30,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
